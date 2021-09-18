@@ -16,6 +16,9 @@
     <Filter Include="proc">
       <UniqueIdentifier>{e4e08b73-9acd-4d54-8daf-09f82c79dbb3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="mem">
+      <UniqueIdentifier>{d61f951a-1c8d-4dce-9794-8298367b82d1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HackAnyGamePt2.cpp">
@@ -24,10 +27,16 @@
     <ClCompile Include="proc.cpp">
       <Filter>proc</Filter>
     </ClCompile>
+    <ClCompile Include="mem.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="proc.h">
       <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="mem.h">
+      <Filter>mem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

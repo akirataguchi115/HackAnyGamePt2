@@ -145,9 +145,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="HackAnyGamePt2.cpp" />
+    <ClCompile Include="mem.cpp" />
     <ClCompile Include="proc.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="mem.h" />
     <ClInclude Include="proc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

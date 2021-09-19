@@ -5,7 +5,7 @@ void mem::PatchEx(BYTE* dst, BYTE* src, unsigned int size, HANDLE hProcess)
 	DWORD oldprotect;
 	VirtualProtectEx(hProcess, dst, size, PAGE_EXECUTE_READWRITE, &oldprotect);
 	WriteProcessMemory(hProcess, dst, src, size, nullptr);
-	VirtualProtectEx(hProcess, dst, size, oldProtect, &oldprotect);
+	VirtualProtectEx(hProcess, dst, size, oldprotect, &oldprotect);
 }
 
 

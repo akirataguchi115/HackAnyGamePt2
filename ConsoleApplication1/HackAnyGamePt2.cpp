@@ -54,11 +54,11 @@ int main()
 			if (bAmmo)
 			{
 				//ff 06 = inc [esi];
-				mem::PatchEx((BYTE*)(moduleBase + 0x10F4F4), (BYTE*)"\xFF\X6", 2, hProcess);
+				mem::PatchEx((BYTE*)(moduleBase + 0x637e9), (BYTE*)"\xFF\06", 2, hProcess);
 			}
 			else {
 				//ff 0E = dec [esi];
-				mem::PatchEx((BYTE*)(moduleBase + 0x10F4F4), (BYTE*)"\xFF\x0E", 2, hProcess);
+				mem::PatchEx((BYTE*)(moduleBase + 0x637e9), (BYTE*)"\xFF\x0E", 2, hProcess);
 			}
 		}		
 		
@@ -88,7 +88,7 @@ int main()
 		Sleep(10);
 	}
 
-	std::cout << "Process not found, press enter to exit\x";
+	std::cout << "Process not found, press enter to exit\n";
 	getchar();
 	return 0;
 }
